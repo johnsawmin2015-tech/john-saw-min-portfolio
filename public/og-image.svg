@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f7f5f0" />
+  <circle cx="80" cy="82" r="7" fill="#c6a15b" />
+  <text
+    x="104"
+    y="90"
+    fill="#66635d"
+    font-family="Courier New, monospace"
+    font-size="18"
+    letter-spacing="4"
+  >
+    SOFTWARE ENGINEER · COMPUTER SCIENCE STUDENT
+  </text>
+  <text
+    x="72"
+    y="292"
+    fill="#171717"
+    font-family="Helvetica Neue, Arial, sans-serif"
+    font-size="106"
+    font-weight="600"
+    letter-spacing="-5"
+  >
+    John Saw Min
+  </text>
+  <line x1="72" y1="352" x2="1128" y2="352" stroke="#e5e1d8" />
+  <text x="72" y="430" fill="#171717" font-family="Georgia, serif" font-size="43">
+    Engineering software with precision,
+  </text>
+  <text x="72" y="486" fill="#171717" font-family="Georgia, serif" font-size="43">
+    scalability, and purpose.
+  </text>
+  <text
+    x="72"
+    y="570"
+    fill="#66635d"
+    font-family="Courier New, monospace"
+    font-size="17"
+    letter-spacing="4"
+  >
+    REACT · TYPESCRIPT · NODE.JS
+  </text>
+</svg>
