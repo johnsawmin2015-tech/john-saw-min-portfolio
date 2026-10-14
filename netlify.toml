@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22.12.0"
+  NITRO_PRESET = "netlify"
+  VITE_SITE_URL = "https://john-saw-min-portfolio.netlify.app"

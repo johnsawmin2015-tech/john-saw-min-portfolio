@@ -80,6 +80,7 @@ const socialImage = absoluteSiteUrl("/og-image.png");
 const sameAs = [site.links.github, site.links.linkedin].filter(
   (url): url is string => url !== undefined,
 );
+const netlifyHeadHydrationGuard = `(()=>{const marker=document.head.querySelector('meta[name="netlify-deploy"][content*="utm_campaign=ai-legible"]');if(!marker)return;for(const node of [...document.head.childNodes]){if((node.nodeType===Node.COMMENT_NODE&&node.textContent?.includes("This site is hosted on Netlify"))||(node.nodeType===Node.TEXT_NODE&&!node.textContent?.trim())||(node instanceof HTMLMetaElement&&(node.name==="hosting-provider"||node.name==="netlify-deploy")))node.remove()}})()`;
 
 export const Route = createRootRoute({
   head: () => ({
@@ -118,6 +119,9 @@ export const Route = createRootRoute({
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
     scripts: [
+      {
+        children: netlifyHeadHydrationGuard,
+      },
       {
         type: "application/ld+json",
         children: JSON.stringify({
